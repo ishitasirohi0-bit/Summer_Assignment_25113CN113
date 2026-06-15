@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int sum(int a, int b){
+int maximum(int a, int b){
 
-    return a + b;
-
+    return (a > b) ? a : b;
 }
 
 int main() {
@@ -13,7 +12,7 @@ int main() {
     cout << "Enter two numbers: ";
     cin >> a >> b;
 
-    cout << "Sum: " << sum(a, b) << endl;
+    cout << "Maximum: " << maximum(a, b) << endl;
 
     return 0;
 }
